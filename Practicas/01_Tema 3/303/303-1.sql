@@ -1,0 +1,1 @@
+SELECT DATE_FORMAT(CURDATE(), '%d / %m / %Y')
