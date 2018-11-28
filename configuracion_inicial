@@ -1,0 +1,4 @@
+La primera vez que se inicia mysql suele dar error al acceder a la base de datos, en Linux, desde el terminal, es necesario ejecutar estas sentencias para dar una contraseña al usuario root y poder entrar:
+
+	- sudo mysql -u root
+	- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
