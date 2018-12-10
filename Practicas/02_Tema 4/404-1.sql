@@ -2,7 +2,7 @@ SET @comercial= 'Agente de ventas', @marketing='Asistente de marketing';
 
 SELECT
 	NombreCompañía,
-	(SELECT CASE (SELECT CargoContacto AS AntiguoCargoContacto) 
+	(SELECT CASE (SELECT CargoContacto) 
 		WHEN @comercial THEN 'Comercial' 
 		WHEN @marketing THEN 'Asistente comercial'
 		ELSE (SELECT CargoContacto)
