@@ -2,3 +2,7 @@ La primera vez que se inicia mysql suele dar error al acceder a la base de datos
 
 	- sudo mysql -u root
 	- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+Si por algun motivo hay problemas con los requisitos de contraseña minima, se puede socucionar accediendo a mysql u escribiendo:
+	
+	- uninstall plugin validate_password;
